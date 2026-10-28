@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="description" content="FOOTEAM — camisas de futebol versão torcedor tailandesa 1.1 e modelo jogador." />
+  <meta property="og:title" content="FOOTEAM | Vista sua paixão" />
+  <meta property="og:description" content="Camisas selecionadas, compra simples e atendimento direto pelo WhatsApp." />
+  <link rel="icon" type="image/png" href="footeam-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <title>FOOTEAM | Camisas de Futebol</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .brand-logo{width:52px;height:52px;object-fit:cover;border-radius:50%;display:block}
+    footer .brand-logo{width:48px;height:48px}
+  </style>
+</head>
+<body>
+  <div class="announcement">FRETE GRÁTIS EM PEDIDOS ACIMA DE R$ 399 <span>•</span> ATENDIMENTO 100% ONLINE</div>
+  <header class="header">
+    <a href="#inicio" class="brand" aria-label="FOOTEAM início">
+      <img class="brand-logo" src="footeam-logo.png" alt="Logo FOOTEAM" />
+      <span>FOO<span>TEAM</span></span>
+    </a>
+    <nav id="nav" aria-label="Navegação principal">
+      <a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#suporte">Suporte</a><a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button id="searchToggle" class="icon-btn" aria-label="Pesquisar">⌕</button>
+      <button id="accountToggle" class="account-btn" type="button" aria-label="Entrar ou acessar minha conta">
+        <span class="account-icon">●</span><span id="accountLabel">Entrar</span>
+      </button>
+      <button id="cartToggle" class="cart-btn" aria-label="Abrir carrinho">Sacola <b id="cartCount">0</b></button>
+      <button id="menuToggle" class="icon-btn menu-btn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A CAMISA. O ESCUDO. A HISTÓRIA.</p>
+        <h1>VISTA O QUE<br/><em>VOCÊ SENTE.</em></h1>
+        <p class="hero-sub">Camisas selecionadas para quem carrega o futebol no peito. Qualidade premium, compra segura e atendimento humano do primeiro contato à entrega.</p>
+        <div class="hero-actions"><a class="btn primary" href="#produtos">Ver coleção <span>→</span></a><a class="text-link" href="#como-comprar">Como comprar</a></div>
+        <div class="trust-row"><span>✓ Qualidade selecionada</span><span>✓ Compra pelo WhatsApp</span><span>✓ Envio acompanhado</span></div>
+      </div>
+      <div class="hero-art hero-brand-art" aria-label="Emblema oficial FOOTEAM com efeito elétrico animado">
+        <div class="brand-emblem-stage" id="brandEmblemStage">
+          <div class="emblem-glow" aria-hidden="true"></div>
+          <div class="emblem-electric-ring ring-one" aria-hidden="true"></div>
+          <div class="emblem-electric-ring ring-two" aria-hidden="true"></div>
+          <div class="lightning-layer" id="lightningLayer" aria-hidden="true"></div>
+          <img class="hero-emblem" src="footeam-logo.png" alt="Emblema oficial FOOTEAM" />
+          <div class="spark-field" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <span class="hero-tag emblem-tag">FOOTEAM<br/><b>2026</b></span>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true"><div>MODELO JOGADOR • TAILANDESA 1.1 • CLUBES • SELEÇÕES • MODELO JOGADOR • TAILANDESA 1.1 • CLUBES • SELEÇÕES •</div></section>
+
+    <section id="produtos" class="products section">
+      <div class="section-head">
+        <div><p class="eyebrow">NOSSA SELEÇÃO</p><h2>CAMISAS EM DESTAQUE</h2></div>
+        <p>Peças escolhidas para torcedores exigentes — do estádio para qualquer lugar.</p>
+      </div>
+      <div class="toolbar">
+        <div id="filters" class="filters"><button class="active" data-filter="Todos">Todos</button><button data-filter="Clubes">Clubes</button><button data-filter="Seleções">Seleções</button><button data-filter="Jogador">Modelo jogador</button></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar time ou seleção" /></label>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+      <div id="emptyProducts" class="empty hidden"><strong>Nenhuma camisa encontrada.</strong><p>Tente outro nome ou categoria.</p></div>
+    </section>
+
+    <section id="sobre" class="story section">
+      <div class="story-number">90'</div>
+      <div><p class="eyebrow">NOSSO JOGO</p><h2>NÃO VENDEMOS SÓ CAMISAS.</h2><p class="big-copy">Entregamos a sensação de vestir uma memória, representar um time e fazer parte de algo maior.</p></div>
+      <div class="story-card"><span>FOOTEAM / DESDE 2026</span><p>Nascemos para aproximar torcedores de camisas marcantes, com curadoria, transparência e um atendimento que fala a sua língua.</p><a href="#contato">Conheça a FOOTEAM →</a></div>
+    </section>
+
+    <section id="como-comprar" class="steps section">
+      <p class="eyebrow">SIMPLES E DIRETO</p><h2>DO CATÁLOGO AO SEU ENDEREÇO</h2>
+      <div class="step-grid"><article><b>01</b><h3>Escolha</h3><p>Selecione seu modelo, tamanho e quantidade.</p></article><article><b>02</b><h3>Envie</h3><p>Sua sacola vira uma mensagem pronta no WhatsApp.</p></article><article><b>03</b><h3>Confirme</h3><p>Combine pagamento, entrega ou retirada no atendimento.</p></article><article><b>04</b><h3>Acompanhe</h3><p>Receba as informações de envio pelo contato informado.</p></article></div>
+    </section>
+
+    <section id="suporte" class="faq section">
+      <div><p class="eyebrow">SUPORTE</p><h2>DÚVIDAS FREQUENTES</h2></div>
+      <div class="accordion">
+        <details><summary>Qual a diferença entre Tailandesa 1.1 e modelo jogador?<span>+</span></summary><p>A versão Tailandesa 1.1 tem caimento de torcedor e acabamento premium. O modelo jogador é mais justo, leve e próximo ao usado em campo.</p></details>
+        <details><summary>Como escolho meu tamanho?<span>+</span></summary><p>Consulte as medidas exibidas ao selecionar o produto. No modelo jogador, normalmente indicamos considerar um tamanho acima.</p></details>
+        <details><summary>Como funciona o pagamento?<span>+</span></summary><p>Após enviar a sacola, nosso atendimento confirma disponibilidade, valor total, pagamento e envio diretamente pelo WhatsApp.</p></details>
+      </div>
+    </section>
+
+    <section id="contato" class="contact section">
+      <div><p class="eyebrow">FALE COM A GENTE</p><h2>SEU TIME NÃO ESTÁ AQUI?</h2><p>Conte qual camisa você procura. A FOOTEAM responde pelo WhatsApp e ajuda a encontrar o modelo.</p></div>
+      <form id="contactForm"><label>Seu nome<input name="name" required minlength="2" placeholder="Como podemos te chamar?" /></label><label>Camisa procurada<input name="shirt" required minlength="3" placeholder="Time, temporada ou jogador" /></label><button class="btn primary" type="submit">Pedir ajuda no WhatsApp →</button></form>
+    </section>
+  </main>
+
+  <footer><a href="#inicio" class="brand" aria-label="FOOTEAM início"><img class="brand-logo" src="footeam-logo.png" alt="Logo FOOTEAM" /><span>FOO<span>TEAM</span></span></a><p>Camisas de futebol para quem vive o jogo.</p><div><a href="#produtos">Produtos</a><a href="#suporte">Suporte</a><button id="adminToggle">Área administrativa</button></div><small>© 2026 FOOTEAM. Todos os direitos reservados.</small></footer>
+
+  <aside id="cartDrawer" class="drawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">SUA ESCOLHA</p><h2>SACOLA</h2></div><button class="close" data-close="cart">×</button></div><div id="cartItems" class="cart-items"></div><div class="drawer-foot"><div class="total"><span>Total estimado</span><strong id="cartTotal">R$ 0,00</strong></div><small>Frete e forma de pagamento combinados no atendimento.</small><button id="checkoutBtn" class="btn primary">Finalizar no WhatsApp →</button><button id="clearCart" class="ghost-btn">Esvaziar sacola</button></div></aside>
+  <div id="overlay" class="overlay"></div>
+
+
+  <dialog id="authModal" class="auth-modal">
+    <button class="close auth-close" aria-label="Fechar">×</button>
+    <div class="auth-brand">
+      <img src="footeam-logo.png" alt="Logo FOOTEAM"/>
+      <div><span>FOOTEAM</span><small>Área de acesso</small></div>
+    </div>
+
+    <div class="auth-tabs auth-tabs-3" role="tablist">
+      <button id="loginTab" class="active" type="button">Cliente</button>
+      <button id="adminLoginTab" type="button">Administrador</button>
+      <button id="registerTab" type="button">Criar conta</button>
+    </div>
+
+    <form id="loginForm" class="auth-form">
+      <div class="auth-title">
+        <p class="eyebrow">ÁREA DO CLIENTE</p>
+        <h2>ENTRAR</h2>
+        <p id="loginHint">Acesse sua conta para continuar.</p>
+      </div>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com" /></label>
+      <label>Senha
+        <div class="password-field">
+          <input name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Sua senha"/>
+          <button type="button" data-toggle-password>Mostrar</button>
+        </div>
+      </label>
+      <button class="btn primary auth-submit" type="submit">Entrar como cliente →</button>
+    </form>
+
+    <form id="adminLoginForm" class="auth-form hidden">
+      <div class="auth-title">
+        <p class="eyebrow">ACESSO RESTRITO</p>
+        <h2>ADMIN</h2>
+        <p>Entre com a conta administrativa para cadastrar, editar e excluir produtos.</p>
+      </div>
+      <label>E-mail administrativo<input name="email" type="email" autocomplete="username" required placeholder="admin@footeam.com" /></label>
+      <label>Senha
+        <div class="password-field">
+          <input name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Senha de administrador"/>
+          <button type="button" data-toggle-password>Mostrar</button>
+        </div>
+      </label>
+      <button class="btn primary auth-submit" type="submit">Entrar no painel →</button>
+      <p class="auth-note">O painel administrativo permite cadastrar, editar e excluir produtos do catálogo.</p>
+    </form>
+
+    <form id="registerForm" class="auth-form hidden">
+      <div class="auth-title">
+        <p class="eyebrow">NOVA CONTA</p>
+        <h2>CADASTRAR</h2>
+        <p>Crie sua conta de cliente FOOTEAM.</p>
+      </div>
+      <label>Nome<input name="name" required minlength="2" autocomplete="name" placeholder="Seu nome" /></label>
+      <label>E-mail<input name="email" type="email" required autocomplete="email" placeholder="voce@exemplo.com" /></label>
+      <label>Senha
+        <div class="password-field">
+          <input name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="Mínimo de 8 caracteres"/>
+          <button type="button" data-toggle-password>Mostrar</button>
+        </div>
+      </label>
+      <label>Confirmar senha<input name="confirmPassword" type="password" required minlength="8" autocomplete="new-password" placeholder="Digite a senha novamente" /></label>
+      <button class="btn primary auth-submit" type="submit">Criar conta →</button>
+      <p class="auth-note">Você poderá precisar confirmar seu e-mail antes de entrar.</p>
+    </form>
+  </dialog>
+
+  <dialog id="accountModal" class="account-modal">
+    <button class="close account-close" aria-label="Fechar">×</button>
+    <div class="account-card">
+      <img src="footeam-logo.png" alt="Logo FOOTEAM"/>
+      <p class="eyebrow">MINHA CONTA</p>
+      <h2 id="accountName">Cliente FOOTEAM</h2>
+      <p id="accountEmail"></p>
+      <span id="accountRole" class="role-chip">CLIENTE</span>
+      <div class="account-actions">
+        <button id="openAdminFromAccount" class="btn primary hidden" type="button">Abrir painel administrativo →</button>
+        <button id="logoutBtn" class="ghost-btn danger" type="button">Sair da conta</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="productModal"><button class="close modal-close">×</button><div id="modalContent"></div></dialog>
+  <dialog id="adminModal" class="admin-modal">
+    <button class="close admin-close" aria-label="Fechar painel">×</button>
+    <div class="admin-head">
+      <p class="eyebrow">GESTÃO FOOTEAM</p>
+      <h2>PAINEL ADMINISTRATIVO</h2>
+      <p>Cadastre novos produtos e gerencie o catálogo atual.</p>
+    </div>
+
+    <div id="adminStats" class="admin-stats"></div>
+
+    <div class="admin-tabs">
+      <button id="adminTabNew" class="active" type="button">Cadastrar produto</button>
+      <button id="adminTabManage" type="button">Gerenciar produtos</button>
+    </div>
+
+    <section id="adminNewSection" class="admin-section">
+      <form id="productForm" class="admin-form admin-product-form">
+        <input type="hidden" name="id"/>
+        <label>Nome do produto<input name="name" required placeholder="Ex.: Real Madrid 25/26" /></label>
+        <label>Preço (R$)<input name="price" type="number" min="1" step="0.01" required placeholder="199.90" /></label>
+        <label>Categoria
+          <select name="category">
+            <option>Clubes</option><option>Seleções</option><option>Jogador</option>
+          </select>
+        </label>
+        <label>Tipo
+          <select name="type">
+            <option>Tailandesa 1.1</option><option>Modelo jogador</option><option>Retrô</option>
+          </select>
+        </label>
+        <label>Selo / destaque<input name="badge" placeholder="NOVO, PREMIUM, MAIS VENDIDA..." /></label>
+        <label>Cor principal<input name="color1" type="color" value="#ff671f" /></label>
+        <label>Cor secundária<input name="color2" type="color" value="#151515" /></label>
+        <label class="admin-image-field">Imagem do produto
+          <input name="imageFile" type="file" accept="image/*" multiple />
+          <small>Opcional. Você pode selecionar várias fotos de uma vez. Elas serão enviadas ao Supabase Storage.</small>
+          <div id="existingImagesInfo" class="existing-images-info hidden"></div>
+          <button id="clearProductImages" class="ghost-btn small-action hidden" type="button">Remover fotos atuais</button>
+        </label>
+        <div class="admin-form-actions">
+          <button class="btn primary" type="submit"><span id="productSubmitLabel">Cadastrar produto</span> →</button>
+          <button id="cancelProductEdit" class="ghost-btn hidden" type="button">Cancelar edição</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="adminManageSection" class="admin-section hidden">
+      <div class="admin-manage-head">
+        <div><strong>Produtos cadastrados</strong><small>Edite ou exclua itens do catálogo.</small></div>
+        <input id="adminProductSearch" type="search" placeholder="Buscar produto..." />
+      </div>
+      <div id="adminProducts" class="admin-products"></div>
+    </section>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
